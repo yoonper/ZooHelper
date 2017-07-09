@@ -22,4 +22,4 @@
 server = s1:2181,s2:2181,s3:2181
 
 ## 工具截图
-![ZooHelper](https://github.com/yoonper/ZooHelper/rawmaster/ZooHelper.png)
+![ZooHelper](https://github.com/yoonper/ZooHelper/raw/master/ZooHelper.png)
