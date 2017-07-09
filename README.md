@@ -17,9 +17,10 @@
 ## 使用方式
 - 安装PHP ZooKeeper扩展：http://www.yoonper.com/post.php?id=59
 - 打开/config.ini，编辑ZooKeeper连接参数，配置示例：
-
+```
 [zookeeper]
 server = s1:2181,s2:2181,s3:2181
+```
 
 ## 工具截图
 ![ZooHelper](https://github.com/yoonper/ZooHelper/raw/master/ZooHelper.png)
