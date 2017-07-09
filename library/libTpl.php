@@ -68,6 +68,8 @@ class libTpl
         //变量标签
         $var = "[a-z0-9_]+";
         $data = preg_replace("#{$ld}\\$($var){$rd}#", "<?php echo \$$1;?>", $data);
+        //二维数组
+        $data = preg_replace("#{$ld}\\$($var)\.($var+){$rd}#i", "<?php echo \$$1['$2'];?>", $data);
         //CSS标签
         $tpl = '<link href="%s%s" rel="stylesheet" type="text/css"/>';
         $data = preg_replace("#{$ld}css(=const)?\s+((http://|https://).+?){$rd}#", "<?php echo sprintf('$tpl', '$2', '$1' ? '' : '?v=$v'); ?>", $data);

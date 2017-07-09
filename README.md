@@ -1,18 +1,26 @@
 # ZooHelper
 一款基于 PHP + ExtJS 开发的 ZooKeeper 可视化工具
 
+---
+
 # 联系方式
-- Email：yoonper@qq.com
+- 邮箱：yoonper@qq.com
 - 博客：[http://www.yoonper.com](http://note.youdao.com/)
+
+---
 
 # 工具特性
 - 树形展示znode节点
 - 支持znode节点CURD操作
 
+---
+
 # 环境要求
 - Linux
 - PHP >= 5.4
 - [php-zookeeper](https://github.com/php-zookeeper/php-zookeeper)
+
+---
 
 # 使用方式
 - 安装PHP ZooKeeper扩展：[http://www.yoonper.com/post.php?id=59](http://www.yoonper.com/post.php?id=59)
