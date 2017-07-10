@@ -2,11 +2,8 @@
 <script>
     Ext.onReady(function () {
         var tree = Ext.create('Ext.tree.Panel', {
-            region: 'west', title: '节点列表', iconCls: 'icon-folder', width: 300, split: true, rootVisible: false,
-            store: {
-                proxy: {type: 'ajax', url: 'index/tree'},
-                root: {children: [{id: '/', text: '/', expanded: true}]}
-            },
+            region: 'west', title: '节点列表', iconCls: 'icon-folder', width: 300, split: true,
+            store: {proxy: {type: 'ajax', url: 'index/tree'}, root: {id: '/', text: '/', expanded: true}},
             listeners: {
                 itemclick: function (t, node) {
                     Ext.Ajax.request({
@@ -17,6 +14,9 @@
                             Ext.getCmp('content').setValue(data.success ? data.data : '读取失败..');
                         }
                     });
+                },
+                itemcollapse: function (node) {
+                    node.set('loaded', false);
                 }
             }
         });
