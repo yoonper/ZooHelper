@@ -57,7 +57,7 @@ class libTpl
      * @param $data
      * @return mixed
      */
-    public function _parse($data)
+    private function _parse($data)
     {
         $v = VERSION;
         list($ld, $rd) = [$this->_leftDelimiter, $this->_rightDelimiter];
